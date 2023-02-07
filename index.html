@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Ivo Gutiérrez - Diseñador Web</title>
+  <meta name="title" content="Ivo Gutierrez - Web Developer">
+  <meta name="description" content="This is a personal portfolio html template made by ivogutierrez">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+
+     <script src="https://kit.fontawesome.com/1ae4c67cf1.js" crossorigin="anonymous"></script>
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+<!-- BOTON WHATSAPP -->
+<a href="https://api.whatsapp.com/send?phone=5493535646362" class="btn-wsp" target="_blank">
+   <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="170" height="40" alt="Pfolio home">
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#index" class="navbar-link">Inicio</a>
+          </li>
+
+          <li>
+            <a href="#resumen" class="navbar-link">Resumen</a>
+          </li>
+
+          <li>
+            <a href="#servicios" class="navbar-link">Servicios</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#contacto" class="navbar-link">Contacto</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+<div id="index"></div>
+      <section class="section hero" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Ivo Gutiérrez<i class="fa-solid fa-circle"></i></h1>
+
+            <p class="hero-subtitle">
+              Diseñador Web
+            </p>
+
+            <div class="hero-banner">
+              <img src="./assets/images/airbrush_20230206102532.jpg" width="800" height="800" alt="ivo gutierrez" class="w-100">
+            </div>
+
+            <p class="section-text">
+              Transformamos ideas en realidad digital, creando experiencias en línea únicas y atractivas para aumentar la eficacia y la satisfacción de sus clientes.
+            </p>
+
+            <a href="#" class="btn has-before">
+              <span class="span">Descargar CV</span>
+
+              <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+          <div id="servicios"></div>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service" aria-labelledby="service-label">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <div>
+              <p class="section-subtitle">
+                Mi Servicio
+              </p>
+
+              <h2 class="h2 section-title" id="service-label">Obtendrás</h2>
+            </div>
+
+            <p class="section-text">
+              Mi servicio se basa en tres planes de acuerdo al objetivo de la empresa/individuo y a la extencion y complejidad de la página.
+            </p>
+
+          </div>
+
+          <div class="slider" data-slider>
+
+            <ul class="slider-container service-list" data-slider-container>
+                <!-- <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="color-filter-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">PLAN BÁSICO</h3>
+
+                  <p class="card-text">
+                    4 secciones (máx.) <br>
+6 servicios o 20 productos (máx.)<br>
+Optimizado para celulares<br>
+Optimizado para el navegador<br>
+Optimizado para motores de búsqueda (SEO)<br>
+Administrador de contenido<br>
+Aviso de privacidad<br>
+
+                  </p>
+
+                  <span class="text-lg card-number">01</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my Graphic Design service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="megaphone-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">PLAN ESTÁNDAR</h3>
+
+                  <p class="card-text">
+                    7 secciones (máx.) <br>
+10 servicios o 35 productos (máx.)<br>
+Optimizado para celulares<br>
+Optimizado para el navegador<br>
+Optimizado para motores de búsqueda (SEO)<br>
+Administrador de contenido<br>
+Aviso de privacidad<br>
+Con ¡Hosting y Dominio incluido!<br>
+                  </p>
+
+                  <span class="text-lg card-number">02</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my Digital Marketing service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">PLAN PREMIUM</h3>
+
+                  <p class="card-text">
+                    Más 15 secciones<br>
+Más 15 servicios o 50 productos <br>
+Optimizado para celulares<br>
+Optimizado para el navegador<br>
+Optimizado para motores de búsqueda (SEO)<br>
+Administrador de contenido<br>
+Aviso de privacidad<br>
+Con ¡Hosting y Dominio incluido!<br>
+                  </p>
+
+                  <span class="text-lg card-number">03</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my Social Media service"></a>
+
+                </div>
+              </li> -->
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon class="ion-icon" name="desktop-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title"><clase class="text--active">Diseño</clase> de la página web </h3>
+
+                  <p class="card-text">
+                   Incluye la planificación, el diseño gráfico, el desarrollo y la implementación de la página web.
+                  </p>
+
+                  <span class="text-lg card-number">01</span>
+
+                  <!-- <a href="#" class="layer-link" aria-label="More about my website design service"></a> -->
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <img class="ion-icon" src="assets/images/grafico-de-barras.png">
+                  </div>
+
+                  <h3 class="h3 card-title"><clase class="text--active">Marketing</clase> (SEO)</h3>
+
+                  <p class="card-text">
+                    Realizo una estrategia para mejorar el posicionamiento de la Web en los resultados de busqueda, aumentando la visibilidad y la atracción de clientes potenciales.
+                  </p>
+
+                  <span class="text-lg card-number">02</span>
+<!-- 
+                  <a href="#" class="layer-link" aria-label="More about my SEO Marketing service"></a> -->
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <img class="ion-icon" src="assets/images/tienda-online.png">
+                  </div>
+
+                  <h3 class="h3 card-title">Tienda <clase class="text--active">Online</clase> (opcional)</h3>
+
+                  <p class="card-text">
+                    Permite a los clientes comprar productos y realizar pagos de forma segura y eficiente. Es una solución integral que permite a los negocios expandir su alcance y generar más ingresos.
+                  </p>
+
+                  <span class="text-lg card-number">03</span>
+<!-- 
+                  <a href="#" class="layer-link" aria-label="More about my eCommerce service"></a> -->
+
+                </div>
+              </li>
+              
+
+        
+              </li>
+<li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <img class="ion-icon" src="assets/images/sensible.png">
+                  </div>
+
+                  <h3 class="h3 card-title"><clase class="text--active">Adaptación</clase> a cualquier dispositivo</h3>
+
+                  <p class="card-text">
+                   La página se va a visualizar correctamente y funcionar de manera eficiente en todos los dispositivos, incluyendo computadoras de escritorio, notebooks, tabletas y celulares.
+                  </p>
+
+                  <span class="text-lg card-number">04</span>
+
+                  <!-- <a href="#" class="layer-link" aria-label="More about my Social Media service"></a> -->
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <img class="ion-icon" src="assets/images/proteger.png" >
+                  </div>
+
+                  <h3 class="h3 card-title">Garantía y <clase class="text--active">Seguridad</clase></h3>
+
+                  <p class="card-text">
+                   Esencial para garantizar la confianza de los usuarios en la plataforma y proteger su información personal. Incluye políticas claras y transparentes sobre el uso de datos y la privacidad.
+                  </p>
+
+                  <span class="text-lg card-number">05</span>
+<!-- 
+                  <a href="#" class="layer-link" aria-label="More about my Social Media service"></a> -->
+
+                </div>
+              </li> 
+
+            </ul>
+
+            <div class="slider-controls">
+              <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+
+              <button class="slider-control next" data-slider-next aria-label="Slide to next item">
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+            </div>
+
+          </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+      <!-- 
+          - #SKILLS
+        -->
+        
+        <div id="resumen"></div>
+        <section class="section skills" aria-label="our skills">
+            <div class="container">
+                
+          <p class="section-subtitle">Resumen</p>
+
+          <h2 class="h2 section-title">¿Cuales son los <clase class="text--active">beneficios</clase>?</h2>
+
+          <div class="skills-wrapper">
+
+            <div>
+                <p class="section-text section-text--responsive2">
+                   <ion-icon class="check" name="checkmark-circle-outline" style="font-size: 20px;color: #ffc107;display: inline-block;position: relative;top: 5px;"></ion-icon> Mayor alcance, aumenta la capacidad de conversión y generación de nuevos clientes potenciales. <br>
+                  <ion-icon class="check" name="checkmark-circle-outline" style="font-size: 20px;color: #ffc107;display: inline-block;position: relative;top: 5px;"></ion-icon> Mejora la imagen de marca y la presencia en línea. <br>
+                   <ion-icon class="check" name="checkmark-circle-outline" style="font-size: 20px;color: #ffc107;display: inline-block;position: relative;top: 5px;"></ion-icon> Aumenta la eficiencia automatizando muchos procesos como la atención al cliente y venta de productos/servicios. <br>
+                   <ion-icon class="check" name="checkmark-circle-outline" style="font-size: 20px;color: #ffc107;display: inline-block;position: relative;top: 5px;"></ion-icon> Accesibilidad las 24 horas. <br>
+                   <ion-icon class="check" name="checkmark-circle-outline" style="font-size: 20px;color: #ffc107;display: inline-block;position: relative;top: 5px;"></ion-icon> Proporciona información detallada y actualizada sobre sus productos y servicios. <br>
+                   <ion-icon class="check" name="checkmark-circle-outline" style="font-size: 20px;color: #ffc107;display: inline-block;position: relative;top: 5px;"></ion-icon> Permite a una empresa recopilar y analizar datos sobre su audiencia y su comportamiento en línea.
+                </p>
+                <div>
+
+
+                  <div class="progress-wrapper">
+                    <p class="progress-label"><p class="section-text--responsive">
+                Mayor alcance, aumenta la capacidad de conversión y generación de nuevos clientes potenciales.<br>
+                  Mejora la imagen de marca y la presencia en línea.<br>
+                  Aumenta la eficiencia automatizando muchos procesos como la atención al cliente y venta de productos/servicios.<br>
+                  Accesibilidad las 24 horas. <br>
+                  Proporciona información detallada y actualizada sobre sus productos y servicios. <br>
+                  Permite a una empresa recopilar y analizar datos sobre su audiencia y su comportamiento en línea.
+              </p></p>
+
+                  </div>
+
+
+            </div>
+              <p class="section-text">
+                Mi objetivo principal es brindar una experiencia atractiva a los usuarios, proporcionando información clara, fácil de navegar y eficiente a través de una página web.
+              </p>
+
+
+              <a href="#" class="btn has-before">ivogutierrez010@gmail.com</a>
+            </div>
+            <div class="image">
+                <img class="img--active" src="assets/images/web-developer.png">
+            </div>
+
+            
+
+          </div>
+
+        </div>
+        <div id="portfolio"></div>
+      </section>
+
+
+
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="portfolio" aria-labelledby="portfolio-label">
+
+        <div class="title-wrapper container">
+
+          <div>
+            <p class="section-subtitle" id="portfolio-label">Proyectos recientes</p>
+
+            <h2 class="h2 section-title">Portfolio<i class="fa-solid fa-circle fa-circle--active"></i></h2>
+          </div>
+
+        </div>
+
+        <div class="slider" data-slider>
+
+          <ul class="slider-container" data-slider-container>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/portfolio-1.png" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Abogado</h3>
+
+                  <p class="card-text"><clase class="text--active">Website</clase></p>
+                </div>
+
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/portfolio-2.png" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Arquitecto</h3>
+
+                  <p class="card-text"><clase class="text--active">Website</clase></p>
+                </div>
+
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/portfolio-3.png" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Tienda Online</h3>
+
+                  <p class="card-text"><clase class="text--active">Website</clase></p>
+                </div>
+
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/portfolio-4.png" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Tienda Online</h3>
+
+                  <p class="card-text"><clase class="text--active">Website</clase></p>
+                </div>
+
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/portfolio-5.png" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Abogado</h3>
+
+                  <p class="card-text"><clase class="text--active">Website</clase></p>
+                </div>
+
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/portfolio-6.png" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Arquitecto</h3>
+
+                  <p class="card-text"><clase class="text--active">Website</clase></p>
+                </div>
+
+
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="slider-controls">
+            <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+              <div class="line"></div>
+              <div class="arrow"></div>
+            </button>
+
+            <button class="slider-control next" data-slider-next aria-label="Slide to next item">
+              <div class="line"></div>
+              <div class="arrow"></div>
+            </button> 
+          </div>
+
+        </div>
+
+      </section>
+<br> <br>
+      
+    </article>
+  </main>
+
+<div id="contacto"></div>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container" >
+
+      <ul class="footer-list">
+
+        
+        <li>
+          <p class="h4 footer-list-title" style="text-align: center;">Ubicación</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link" style="text-align: center;">Hernando, Córdoba - Argentina</a>
+        </li>
+
+      </ul>
+
+
+      <ul class="footer-list">
+          <div>
+            <p class="h4 footer-list-title" style="text-align: center;margin-bottom: 15px;">Contacto</p>
+          </div>
+
+        <ul class="social-list-container" style="display: flex;justify-content: center;align-items: center;gap: 10px;">
+            <li>
+              <a href="#" class="social-link whatsapp">
+                <ion-icon class="whatsapp" name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#" class="social-link instagram">
+                <ion-icon class="instagram" name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            
+            
+            
+            <li>
+              <a href="#" class="social-link linkedin">
+                <ion-icon class="linkedin" name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            
+             <li>
+              <a href="#" class="social-link gmail">
+                <ion-icon class="instagram" name="mail-open-outline"></ion-icon>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#" class="social-link phone">
+                <ion-icon class="phone" name="call-outline"></ion-icon>
+              </a>
+            </li>
+        </ul class="social-list-container">
+
+      </ul>
+    </div>
+</footer>
+<div id="copyright" style="position: relative; text-align: center; background-color: #202127;">
+    <span id="copyright-text">Todos los derechos reservados &copy;Ivo Gutiérrez 2023.</span>
+</div>
+
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
