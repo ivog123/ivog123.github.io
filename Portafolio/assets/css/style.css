@@ -205,7 +205,7 @@ body.nav-active { overflow: hidden; }
 
 .w-100 { width: 100%; }
 
-.has-before {
+/* .has-before {
   position: relative;
   z-index: 1;
 }
@@ -214,7 +214,7 @@ body.nav-active { overflow: hidden; }
   position: absolute;
   content: "";
   z-index: -1;
-}
+} */
 
 .btn {
   color: var(--white);
@@ -226,6 +226,28 @@ body.nav-active { overflow: hidden; }
   padding: 20px 32px;
 }
 
+
+.btn1:hover{
+  background-color: #17181c !important;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+
+.span:hover{
+  background-color: #17181c !important;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+
+/* 
 .btn::before {
   width: 70px;
   height: 70px;
@@ -237,7 +259,7 @@ body.nav-active { overflow: hidden; }
   transition: var(--cubic-bounce);
 }
 
-.btn:is(:hover, :focus-visible)::before { left: calc(100% - 70px); }
+.btn:is(:hover, :focus-visible)::before { left: calc(100% - 70px); } */
 
 .section-subtitle {
   text-transform: uppercase;
@@ -324,6 +346,7 @@ body.nav-active { overflow: hidden; }
   align-items: center;
   gap: 24px;
   margin-block-start: 40px;
+  margin-block-end: 40px;
 }
 
 .img-holder {
@@ -600,7 +623,8 @@ color: #ffc107; } */
 
 }
 
-.hero .section-text { margin-block: 30px; }
+.hero .section-text { margin-block: 30px;
+color: rgb(233, 233, 233); }
 
 .hero .btn { margin-inline: auto; }
 
@@ -687,11 +711,13 @@ html{
 
 .image{
   display: flex;
-  margin-top: -121px;
+  position: relative;
+  justify-content: center;
 }
 
 .img--active{
-  color: #ffc107;
+  height: 350px;
+  width: auto;
 }
 
 /*-----------------------------------*\
@@ -1108,7 +1134,10 @@ html{
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  .hero .section-text { margin-block-end: 52px; }
+  .hero .section-text { 
+    margin-block-end: 52px;
+    font-weight: bold;
+    font-size: 15px; }
 
 
 }
@@ -1154,9 +1183,124 @@ html{
 
   @media (max-width:1198px){
     .img--active{
-      height: 400px;
+      height: 350px;
     }
     .image{
       margin-top: 0;
     }
   }
+
+.class{
+  padding: 0px 2px;
+  color: #ffc107;
+}
+
+.card-number3 {
+  font-weight: 300;
+  margin-inline-start: initial;
+  line-height: 0.6;
+  font-size: 30px;
+  max-width: max-content;
+  margin-block-start: 32px;
+  color: #ffc107;
+}
+
+
+
+
+
+	
+/*-----------------------------------*\
+	  #SERVICE
+	\*-----------------------------------*/
+	
+
+	.service-card2 {
+	  position: relative;
+	  background-color: #202127;
+	  height: 100%;
+	  padding: 60px 40px 40px;
+	  transition: var(--transition-2);
+	}
+	
+
+	.service-card2 .card-icon2 ion-icon {
+	  color: var(--white);
+	  font-size: 6rem;
+	  --ionicon-stroke-width: 15px;
+	}
+	
+
+	.service-card2 .card-title2 {
+	  color: var(--white);
+	  margin-block: 20px;
+	}
+	
+
+	.service-card2 .card-text2 { color: var(--white); }
+	
+
+	.service-card2 .card-number2 {
+	  margin-inline-start: auto;
+	  font-weight: var(--fw-800);
+	  line-height: 0.6;
+	  max-width: max-content;
+	  margin-block-start: 32px;
+	  -webkit-text-stroke: 1px var(--content-color, var(--black));
+	  -webkit-text-fill-color: transparent;
+	  opacity: 0.3;
+	}
+	
+/* 
+	.service-card2:is(:hover, :focus-within) {
+    --content-color: var(--white);
+	  background-color: var(--raisin-black);
+	}
+	 */
+
+  .service-card2:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+	
+
+@media (max-width:983px){
+  .next2 , .prev2{
+    display: flex !important;
+  }
+}
+
+@media (min-width:984px){
+  .next2 , .prev2{
+    display: none !important;
+  }
+
+  .boton{
+    margin-block-start: -40px;
+  }
+}
+
+.ion-icon2 {
+display: flex;
+float: left;
+  position: relative;
+  top: 8px;
+  color: #ffcc04;
+  font-size: 17px;
+}
+
+.boton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 40px;
+}
