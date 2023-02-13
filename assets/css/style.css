@@ -419,7 +419,7 @@ body.nav-active { overflow: hidden; }
   left: 0;
   width: 100%;
   background-color: var(--eerie-black);
-  padding-block: 24px;
+  padding-block: 16px;
   z-index: 4;
   transition: var(--transition-1);
 }
@@ -465,7 +465,7 @@ body.nav-active { overflow: hidden; }
   position: absolute;
   top: 100%;
   right: -370px;
-  max-width: 370px;
+  max-width: 230px;
   width: 100%;
   background-color: var(--white);
   height: 100vh;
@@ -998,6 +998,13 @@ html{
 
   .footer .container { grid-template-columns: repeat(3, 1fr); }
 
+  .premium {
+  display: inline-block;
+  position: absolute;
+  top: 83px !important;
+}
+
+ 
 }
 
 
@@ -1068,7 +1075,14 @@ html{
   .blog-card .card-content { padding: 32px; }
 
   .blog-list li:nth-child(2n) .card-banner { order: 1; }
-
+  .premium {
+  display: inline-block;
+  position: absolute;
+  top: 120px !important;
+}
+ .responsive{
+  display: none !important;
+ }
 }
 
 
@@ -1139,6 +1153,11 @@ html{
     font-weight: bold;
     font-size: 15px; }
 
+  .premium {
+  display: inline-block;
+  position: absolute;
+  top: 83px !important;
+}
 
 }
 
@@ -1164,7 +1183,10 @@ html{
   .section-text--responsive2{
     display: none;
   }
+
 }
+
+
 
   @media (max-width: 983px){
     .section-text--responsive {
@@ -1173,6 +1195,7 @@ html{
       font-weight: 100;
       width: 744px;
     }
+    
   }
 
   @media (min-width:984px){
@@ -1277,6 +1300,8 @@ html{
   .next2 , .prev2{
     display: flex !important;
   }
+
+
 }
 
 @media (min-width:984px){
@@ -1287,6 +1312,12 @@ html{
   .boton{
     margin-block-start: -40px;
   }
+
+  .premium {
+  display: inline-block;
+  position: absolute;
+  top: 400px;
+}
 }
 
 .ion-icon2 {
@@ -1303,4 +1334,34 @@ float: left;
   justify-content: center;
   align-items: center;
   margin-block-end: 40px;
+}
+
+.premium{
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+}
+
+@media (max-width:574px){
+  .premium {
+  display: inline-block;
+  position: absolute;
+  top: 82px;
+}
+}
+
+@media (min-width:576px){
+  .premium {
+  display: inline-block;
+  position: absolute;
+  top: 120px;
+}
+}
+
+@media (max-width:328px){
+  .premium {
+  display: inline-block;
+  position: absolute;
+  top: 118px;
+}
 }
