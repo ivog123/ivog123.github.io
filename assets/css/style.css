@@ -1080,7 +1080,7 @@ html{
   position: absolute;
   top: 120px !important;
 }
- .responsive{
+ .responsive, .section-text--responsive{
   display: none !important;
  }
 }
